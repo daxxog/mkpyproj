@@ -17,4 +17,5 @@ echo "pulling template -->\n" && \
     try_pull_remote "requirements.dev.txt" && \
     try_pull_remote ".gitignore" && \
     try_pull_remote ".python-version" && \
+    touch requirements.txt && \
     echo "template pulled !!"
