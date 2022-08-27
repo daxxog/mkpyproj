@@ -1,5 +1,6 @@
 #!/bin/bash
 set -x
+_PYTHON_VERSION=3.10
 SOURCE_GH_REPO="daxxog/envsubst-mustache"
 AT_COMMIT="caaf2b3ee50e7e1d64a6dfca0b3ef44473c24437"
 PULL_FROM="https://raw.githubusercontent.com/${SOURCE_GH_REPO}/${AT_COMMIT}"
@@ -34,5 +35,5 @@ DEVREQS
 fi
 
 if [ ! -f .python-version ]; then
-latest_python_minor_version | tee .python-version
+latest_python_minor_version ${_PYTHON_VERSION} | tee .python-version
 fi
