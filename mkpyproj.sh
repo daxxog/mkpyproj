@@ -25,7 +25,7 @@ printf "pulling template -->\n\n" && \
     echo "template pulled !!"
 
 if [ ! -f requirements.dev.txt ]; then
-cat <DEVREQS | tee requirements.dev.txt
+cat <<DEVREQS | tee requirements.dev.txt
 neovim
 jedi
 pynvim
