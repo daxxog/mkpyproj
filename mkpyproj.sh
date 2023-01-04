@@ -30,6 +30,10 @@ neovim
 jedi
 pynvim
 pudb
+black
+isort
+flake8
+bandit
 -r requirements.txt
 DEVREQS
 fi
